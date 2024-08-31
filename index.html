@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jogg()">
+<html lang="en">
 
 <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=Edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>SUPER ANIMATION</title>
-        <!-- JavaScript -->
-        <script src="/main.js">
-        </script>
+        <title>SUPER ANIMATIONS IN ONE CLICK</title>
         <!-- Custom Styles -->
         <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-        <section id="boxarea">
-                <div id="box">
-                </div>
-        </section>
-        <section id="activationoptions">
-                <select name="animationtype" id="animationtype">
+
+        <section id="activationOptions">
+                <select name="animationType" id="animationType">
                         <optgroup label="Complex Animation">
-                                <option value="ease">Ease</option>
+                                <option value="ease" selected>Ease</option>
                                 <option value="ease-in">Ease-in</option>
                                 <option value="ease-out">Ease-out</option>
                                 <option value="ease-in-out">Ease-in-out</option>
                         </optgroup>
                         <optgroup label="Simple Animation">
-                                <option value="linear" selected>Linear</option>
+                                <option value="linear">Linear</option>
                         </optgroup>
                 </select>
-                <select name="animationtime" id="animationtime">
+                <select name="animationTime" id="animationTime">
                         <optgroup label="Time">
-                                <option value="0.05s">0.05s</option>
-                                <option value="0.5s">0.5s</option>
-                                <option value="0.1s">0.1s</option>
-                                <option value="1s">1s</option>
-                                <option value="3s">3s</option>
-                                <option value="6s">6s</option>
+                                <option value="sec0-05">0.05s</option>
+                                <option value="sec0-5">0.5s</option>
+                                <option value="sec0-1">0.1s</option>
+                                <option value="sec1">1s</option>
+                                <option value="sec3" selected>3s</option>
+                                <option value="sec6">6s</option>
                         </optgroup>
                 </select>
-                <select name="rotationandmore" id="rotationandmore">
+                <select name="rotationAndMore" id="rotationAndMore">
                         <optgroup label="Rotation">
-                                <option value="360deg">360deg</option>
-                                <option value="180deg">180deg</option>
-                                <option value="90deg">90deg</option>
-                                <option value="0deg">0deg</option>
-                        </optgroup>
-                        <optgroup>
-                                <option value=""></option>
+                                <option value="deg360">360Deg</option>
+                                <option value="deg180" selected>180Deg</option>
+                                <option value="deg90">90Deg</option>
+                                <option value="deg0">0Deg</option>
                         </optgroup>
                 </select>
         </section>
+        <section id="boxArea">
+                <div id="box">
+                </div>
+        </section>
+        <section id="activationButtons">
+                <button type="submit" id="submit">Start Animation</button>
+        </section>
+        <script src="/main.js">
+        </script>
 </body>
 
 </html>

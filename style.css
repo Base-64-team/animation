@@ -2,16 +2,50 @@ body {
         background-color: #222;
 }
 
-#activationptions {
+/* Selection ares */
+select {
+        text-align: center;
+        font-style: italic;
+        font-family: 'Courier New', Courier, monospace;
+}
+
+/* Any buttons style */
+button {
+        height: 60px;
+        width: 200px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border: 1px solid white;
+}
+
+#activationButtons {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-flow: column nowrap;
+        text-align: center;
+}
+
+/* If the button is hovered */
+button:hover {
+        transform: scale(120%);
+}
+
+/* id styles */
+#activationOptions {
         justify-content: space-between;
         font-size: 15px;
         display: flex;
         flex-flow: row nowrap;
+        row-gap: 1rem;
 }
 
-#animationtype,
-#animationtime,
-#rotationandmore {
+#animationType,
+#animationTime,
+#rotationAndMore {
+        border-radius: 5px;
         font-size: 16px;
         border: 1px solid white;
         align-items: center;
@@ -23,7 +57,7 @@ body {
         width: 180px;
 }
 
-#boxarea {
+#boxArea {
         min-height: 70vh;
         justify-content: center;
         align-items: center;
@@ -32,34 +66,165 @@ body {
 }
 
 #box {
+        background-image: linear-gradient(to right, crimson, #494C67);
         height: 200px;
         width: 200px;
         background-color: none;
-        border: 3px solid white;
-}
-
-.hello {
-        animation-name: slide;
-        animation-direction: normal;
-        animation-duration: 1s;
+        border: 4px solid white;
         animation-iteration-count: infinite;
-        animation-fill-mode: ease;
+        animation-delay: 0s;
 }
 
-@keyframes slide {
+/* The classes */
+.linear {
+        animation-timing-function: linear;
+}
+
+.ease {
+        animation-timing-function: ease;
+}
+
+.ease-in {
+        animation-timing-function: ease-in;
+}
+
+.ease-out {
+        animation-timing-function: ease-out;
+}
+
+
+.ease-in-out {
+        animation-timing-function: ease-in-out;
+}
+
+.sec0-05 {
+        animation-duration: 0.05s;
+}
+
+.sec0-5 {
+        animation-duration: 0.5s;
+}
+
+.sec0-1 {
+        animation-duration: 0.1s
+}
+
+.sec1 {
+        animation-duration: 1s
+}
+
+.sec3 {
+        animation-duration: 3s
+}
+
+.sec6 {
+        animation-duration: 6s
+}
+
+.deg360 {
+        animation-name: deg360;
+}
+
+.deg180 {
+        animation-name: deg180;
+}
+
+.deg90 {
+        animation-name: deg90;
+}
+
+.deg0 {
+        animation-name: deg0;
+}
+
+/* The keyframes */
+
+@keyframes deg0 {
         0% {
-                transform: translate(0px)
+                transform: translate(0px) rotate(0deg)
         }
 
         33% {
-                transform: translate(250px)
+                transform: translate(250px) rotate(0deg)
         }
 
         66% {
-                transform: translate(-250px)
+                transform: translate(-250px) rotate(0deg)
         }
 
         100% {
-                transform: translate(0px)
+                transform: translate(0px) rotate(0deg)
+        }
+}
+
+@keyframes deg0 {
+        0% {
+                transform: translate(0px) rotate(0deg)
+        }
+
+        33% {
+                transform: translate(250px) rotate(0deg)
+        }
+
+        66% {
+                transform: translate(-250px) rotate(0deg)
+        }
+
+        100% {
+                transform: translate(0px) rotate(0deg)
+        }
+}
+
+@keyframes deg90 {
+        0% {
+                transform: translate(0px) rotate(0deg)
+        }
+
+        33% {
+                transform: translate(250px) rotate(90deg)
+        }
+
+        66% {
+                transform: translate(-250px) rotate(-90deg)
+        }
+
+        100% {
+                transform: translate(0px) rotate(0deg)
+        }
+}
+
+@keyframes deg180 {
+        0% {
+                transform: translate(0px) rotate(0deg)
+        }
+
+        33% {
+                transform: translate(250px) rotate(180deg)
+        }
+
+        66% {
+                transform: translate(-250px) rotate(-180deg)
+        }
+
+        100% {
+                transform: translate(0px) rotate(0deg)
+        }
+}
+
+@keyframes deg360 {
+        0% {
+                transform: translate(0px) rotate(0deg)
+        }
+
+        33% {
+                transform: translate(250px) rotate(360deg)
+        }
+
+        66% {
+                transform: translate(-250px) rotate(-360deg)
+        }
+
+        100% {
+                transform: translate(0px) rotate(0deg)
         }
 }
