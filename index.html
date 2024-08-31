@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jogg()">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>SUPER ANIMATION</title>
+        <!-- JavaScript -->
+        <script src="/main.js">
+        </script>
+        <!-- Custom Styles -->
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <section id="boxarea">
+                <div id="box">
+                </div>
+        </section>
+        <section id="activationoptions">
+                <select name="animationtype" id="animationtype">
+                        <optgroup label="Complex Animation">
+                                <option value="ease">Ease</option>
+                                <option value="ease-in">Ease-in</option>
+                                <option value="ease-out">Ease-out</option>
+                                <option value="ease-in-out">Ease-in-out</option>
+                        </optgroup>
+                        <optgroup label="Simple Animation">
+                                <option value="linear" selected>Linear</option>
+                        </optgroup>
+                </select>
+                <select name="animationtime" id="animationtime">
+                        <optgroup label="Time">
+                                <option value="0.05s">0.05s</option>
+                                <option value="0.5s">0.5s</option>
+                                <option value="0.1s">0.1s</option>
+                                <option value="1s">1s</option>
+                                <option value="3s">3s</option>
+                                <option value="6s">6s</option>
+                        </optgroup>
+                </select>
+                <select name="rotationandmore" id="rotationandmore">
+                        <optgroup label="Rotation">
+                                <option value="360deg">360deg</option>
+                                <option value="180deg">180deg</option>
+                                <option value="90deg">90deg</option>
+                                <option value="0deg">0deg</option>
+                        </optgroup>
+                        <optgroup>
+                                <option value=""></option>
+                        </optgroup>
+                </select>
+        </section>
+</body>
+
+</html>
